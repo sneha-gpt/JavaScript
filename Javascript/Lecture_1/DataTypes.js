@@ -53,3 +53,33 @@ let obj2 = obj1;
 obj2["name"] = "harshita";
 console.log(obj1);
 console.log(obj2);
+
+// Dynamic Testing 
+
+let k = 12;
+
+k = null;
+console.log(k);
+
+k = true;
+console.log(k);
+
+// Types of Quirks 
+
+console.log(1 === '1');
+console.log(1 == '1');
+
+// Type Coercion
+
+console.log("5" + 1);
+console.log("5" - 1);
+
+// Truthy or Falsy Values 
+
+console.log(!!NaN);
+
+// Why typeof NaN -> number 
+
+console.log(2*"Sneha"); // Multiplication not possible (failed operation of Number therefore gives NaN and type of that is number)
+
+
