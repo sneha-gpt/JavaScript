@@ -39,6 +39,11 @@ console.log(typeof(+"5")); //number
 
 4 > 6 ? console.log("4") : console.log("6") 
 
+let score = 78;
+let grade = score >= 90 ? "A" : score >= 75 ? "B" : score >= 60 ? "C" : "Fail";
+
+console.log(grade);
+
 // instanceof 
 
 class Person {}
