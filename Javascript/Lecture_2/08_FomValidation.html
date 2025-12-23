@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #name-hide{
+            display: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" id="name" placeholder="name">
+        <br><br>
+
+        <div id="name-hide">
+            <small>Length of name should be greater than 2</small>
+            <br><br>
+        </div>
+        <input type="email" placeholder="email" id="email">
+        <br><br>
+        <input type="password" placeholder="password" id="password">
+        <br><br>
+        <select>
+            <option value="" disabled selected >Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <br><br>
+        <textarea placeholder="Tell me about youreself"></textarea>
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <script src="08_FormValidation.js"></script>
+</body>
+</html>
