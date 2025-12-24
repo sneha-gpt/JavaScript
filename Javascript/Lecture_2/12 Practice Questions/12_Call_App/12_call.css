@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Controls */
+.controls {
+  position: absolute;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.controls button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  transition: transform 0.2s;
+}
+
+.controls button:hover {
+  transform: scale(1.1);
+}
+
+/* Stack */
+.stack-container {
+  position: relative;
+  width: 340px;
+  height: 220px;
+}
+
+/* Card */
+.card {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 24px;
+  color: white;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.card h3 {
+  font-size: 24px;
+}
+
+.card p {
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(6px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal form {
+  width: 320px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  padding: 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: white;
+}
+
+.modal input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: white;
+  color: black;
+}
+
+.modal button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+}

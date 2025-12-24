@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Interactive Card Stack</title>
+  <link rel="stylesheet" href="12_call.css" />
+</head>
+<body>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button id="up" type="button">⬆</button>
+    <button id="add" type="button">＋</button>
+    <button id="down" type="button">⬇</button>
+  </div>
+
+  <!-- Card Stack -->
+  <div class="stack-container" id="stack"></div>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <form id="card-form">
+      <h2>Add Card</h2>
+
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Name"
+        required
+      />
+
+      <input
+        type="text"
+        id="role"
+        name="role"
+        placeholder="Role"
+        required
+      />
+
+      <button type="submit">Create</button>
+    </form>
+  </div>
+
+  <script src="12_call.js"></script>
+</body>
+</html>
