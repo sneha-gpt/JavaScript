@@ -13,3 +13,5 @@ npm uninstall package
 npm i package_name --save-dev
 
 */
+
+console.log("Hello World");

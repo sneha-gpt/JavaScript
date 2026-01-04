@@ -1,10 +1,23 @@
 {
   "dependencies": {
     "accessibility": "^4.5.1",
+    "chalk": "^5.6.2",
     "express": "^5.2.1",
     "one-liner-joke": "^1.2.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
-  }
+  },
+  "name": "02_npm",
+  "version": "1.0.0",
+  "main": "01_npm.js",
+  "scripts": {
+    "start": "node 01_npm.js",
+    "dev": "echo \"\\033[32mRunning...\\033[0m\" && node 01_npm.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
